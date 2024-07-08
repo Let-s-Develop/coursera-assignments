@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .main {
+            padding: 20px;
+        }
+        .portfolio-item {
+            background: #f4f4f4;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        @media (min-width: 768px) {
+            .portfolio-item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .portfolio-item img {
+                max-width: 200px;
+                margin-right: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>My Portfolio</h1>
+    </div>
+    <div class="main">
+        <div class="portfolio-item">
+            <img src="https://via.placeholder.com/150" alt="Project Thumbnail">
+            <div>
+                <h2>Project Title</h2>
+                <p>Project description goes here. This is a brief overview of what the project entails.</p>
+            </div>
+        </div>
+        <!-- Add more portfolio items as needed -->
+    </div>
+</body>
+</html>
